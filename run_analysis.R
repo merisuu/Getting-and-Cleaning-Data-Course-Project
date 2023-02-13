@@ -60,5 +60,5 @@ selected_data_sum <- selected_data %>%
                     group_by(Activity, Subject) %>%
                     summarize_all(mean)
 
-                    
+write.table(selected_data_sum, "selected_data_sum.txt", row.names = FALSE)                    
 
